@@ -7,21 +7,135 @@
     .settings-section{
         margin-top: 73px;
     }
-    /* .nav-bar-bottom {
-        margin: -87px 15px;
-    } */
+    
     .sub{
-        margin-bottom: 0px;
+        margin-bottom: 4px;
+    }
+    /* settings */
+ 
+    /* profile_view */
+    .profile-container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .profile-bottom-section{
+        padding-left: 0px;
+        padding-right: 0px;
+        position: fixed;
+        bottom: -1px;
+        height: 340px;
+    }
+
+    /* end profile */
+
+    /* story view */
+
+    .story-img{
+        width: 100%;
+        position: fixed;
+    }
+    .story-text{
+        position: fixed;
+    }
+
+    .view-story{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .new{
+        left: 20px;
+        bottom: 20px;
+        position: fixed;
+        gap: 10px;
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    .message-icon{
+        right: -35px;
+        position: relative;
+    }
+
+    .close-x{
+        bottom: 20px;
+        right: 10px;
+        position: fixed;
+    }
+
+    .btn-new {
+        padding: 13px; /* Reduce padding for smaller screens */
     }
 }
 
 /* Tablets view */
 @media screen and (min-width: 550px) and (max-width: 768px) {
+    body{
+        background: #3b0937;
+    }
+    /* settings */
+    .settings-section{
+        margin-top: 73px;
+    }
+    /* Profile_view */
+    
+    .background-image {
+        height: 550px;
+    }
+    .name-age h1 {
+        font-size: 20px;
+    }
+    .name-age h4 {
+        font-size: 14px;
+    }
+    .content-section {
+        flex-direction: row;
+        align-items: center;
+    }
+    .content-section .icon-sub-content {
+        font-size: 20px;
+    }
+    .content-section h4 {
+        font-size: 16px;
+    }
+    .content-section p {
+        font-size: 12px;
+    }
+    .profile-bottom-section{
+        margin-top: 338px;
+        height: 343px;
+        position: fixed;
+        width: 100%;
+        left: 0px;
+    }
+    .profile-bottom-icons{
+        position: fixed;
+        left: 0px;
+    }
+
+    /* end profile */
+
+    /* story view */
+
+    .new{
+        left: -400px;
+        bottom: 0px;
+        gap: 142px;
+    }
+
+    /* popup */
+    .popup-back{
+        color: white;
+    }
 
 }
 
 /* desktop view */
 @media screen and (min-width: 769px) {
+    /* settings */
+    .settings-section{
+        margin-top: 45px;
+    }
     .settings-text{
         font-size: 30px;
     }
@@ -30,5 +144,101 @@
     }
     .content-section{
         padding: 5px;
+    }
+    .sub{
+        margin-bottom: 0px;
+    }
+    /* settings end*/
+
+    /* Profile_view */
+    body{
+        background: #3b0937;
+    }
+
+    .background-image {
+        height: 520px;
+        padding: 0px 310px
+    }
+    .slid-side{
+        right: 150px;
+    }
+    .name-age h1 {
+        font-size: 28px;
+    }
+    .name-age h4 {
+        font-size: 20px;
+    }
+    .content-section h4 {
+        font-size: 20px;
+    }
+    .content-section p {
+        font-size: 16px;
+    }
+    .name-box-section{
+        margin-top: -110px;
+    }
+    .box{
+        margin: 0px 332px;
+    }
+
+    .profile-bottom-section{
+        margin-top: 238px;
+        height: 310px;
+        position: fixed;
+        width: 101%;
+        left: 0px;
+        bottom: -1px;
+    }
+
+    .profile-bottom-icons{
+        position: fixed;
+        left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .profile-bottom-nav-iconc{
+        padding: 6px;
+        width: 365px;
+    }
+    .x-icon{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .star-icon{
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        padding: 10px;
+        padding-top: 11px;
+    }
+    .hart-icon{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding: 10px;
+        padding-top: 11px;
+    }
+    .comment-icon{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        padding: 10px;
+        padding-top: 11px;
+    }
+
+    /* end profile */
+
+    /* story view */
+    .new{
+        left: -340px;
+        bottom: 0px;
+        gap: 94px;
+    }
+
+     /* popup */
+     .popup-back{
+        color: white;
     }
 }
